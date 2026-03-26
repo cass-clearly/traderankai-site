@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free HVAC & Plumbing SEO Audit | TradeRankAI</title>
+  <meta name="description" content="Free 15-point SEO checklist for HVAC and plumbing companies. Find out exactly where you're losing customers online." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #1a56db;
+      --blue-dark: #1447c0;
+      --blue-light: #e8f0fd;
+      --green: #0d9f62;
+      --green-bg: #ecfdf3;
+      --yellow: #d97706;
+      --yellow-bg: #fffbeb;
+      --orange: #ea580c;
+      --orange-bg: #fff7ed;
+      --red: #dc2626;
+      --red-bg: #fef2f2;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --radius: 10px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
+      --shadow-lg: 0 4px 6px rgba(0,0,0,0.07), 0 10px 40px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--gray-900);
+      font-weight: 700;
+      font-size: 17px;
+      letter-spacing: -0.3px;
+    }
+    .logo-icon {
+      width: 30px;
+      height: 30px;
+      background: var(--blue);
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-icon svg { display: block; }
+    .logo-sub {
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: block;
+      line-height: 1;
+    }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+
+    /* ── Hero ── */
+    .hero {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .hero-inner { max-width: 620px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: clamp(24px, 5vw, 36px);
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.8px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .hero p {
+      font-size: 17px;
+      color: var(--gray-500);
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* ── Score Banner ── */
+    .score-banner {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      max-width: 780px;
+      margin: 32px auto 0;
+      box-shadow: var(--shadow);
+    }
+    .score-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .score-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .score-display {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+    .score-number {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--gray-900);
+      line-height: 1;
+      transition: color 0.3s;
+    }
+    .score-denom {
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--gray-400);
+    }
+    .score-verdict {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      transition: all 0.3s;
+    }
+    .bar-track {
+      height: 10px;
+      background: var(--gray-100);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      transition: width 0.4s cubic-bezier(.4,0,.2,1), background 0.3s;
+      background: var(--blue);
+    }
+
+    /* Score state colors */
+    .state-0 .score-number { color: var(--gray-400); }
+    .state-0 .bar-fill { background: var(--gray-300); }
+    .state-0 .score-verdict { background: var(--gray-100); color: var(--gray-500); }
+
+    .state-red .score-number { color: var(--red); }
+    .state-red .bar-fill { background: var(--red); }
+    .state-red .score-verdict { background: var(--red-bg); color: var(--red); }
+
+    .state-orange .score-number { color: var(--orange); }
+    .state-orange .bar-fill { background: var(--orange); }
+    .state-orange .score-verdict { background: var(--orange-bg); color: var(--orange); }
+
+    .state-yellow .score-number { color: var(--yellow); }
+    .state-yellow .bar-fill { background: var(--yellow); }
+    .state-yellow .score-verdict { background: var(--yellow-bg); color: var(--yellow); }
+
+    .state-green .score-number { color: var(--green); }
+    .state-green .bar-fill { background: var(--green); }
+    .state-green .score-verdict { background: var(--green-bg); color: var(--green); }
+
+    /* ── Main Layout ── */
+    .main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 32px 24px 60px;
+    }
+
+    /* ── Group ── */
+    .group { margin-bottom: 28px; }
+    .group-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .group-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .group-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--gray-500);
+    }
+    .group-count {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--gray-400);
+      margin-left: auto;
+    }
+
+    /* ── Checklist Card ── */
+    .checklist { display: flex; flex-direction: column; gap: 2px; }
+
+    .item {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .item:hover { border-color: var(--gray-300); box-shadow: var(--shadow); }
+    .item.checked {
+      border-color: #a7f3d0;
+      background: var(--green-bg);
+    }
+
+    .item-main {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 18px;
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .check-box {
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--gray-300);
+      border-radius: 6px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      background: white;
+    }
+    .item.checked .check-box {
+      background: var(--green);
+      border-color: var(--green);
+    }
+    .check-box svg { display: none; }
+    .item.checked .check-box svg { display: block; }
+
+    .item-text { flex: 1; min-width: 0; }
+    .item-number {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 2px;
+    }
+    .item.checked .item-number { color: var(--green); opacity: 0.7; }
+    .item-question {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--gray-800);
+      line-height: 1.4;
+    }
+    .item.checked .item-question {
+      color: var(--gray-600);
+      text-decoration: line-through;
+      text-decoration-color: rgba(13,159,98,0.4);
+    }
+
+    .item-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      margin-top: 0;
+      flex-shrink: 0;
+      color: var(--gray-400);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+    }
+    .item-toggle:hover { background: var(--gray-100); color: var(--gray-600); }
+    .item.checked .item-toggle { color: var(--green); opacity: 0.7; }
+    .item-toggle svg { transition: transform 0.2s; }
+    .item.open .item-toggle svg { transform: rotate(180deg); }
+
+    /* Expandable explanation */
+    .item-why {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.2s;
+      opacity: 0;
+    }
+    .item.open .item-why {
+      max-height: 300px;
+      opacity: 1;
+    }
+    .item-why-inner {
+      padding: 0 18px 16px 54px;
+      font-size: 13.5px;
+      color: var(--gray-600);
+      line-height: 1.6;
+      border-top: 1px solid var(--gray-100);
+      padding-top: 12px;
+    }
+    .item.checked .item-why-inner { border-top-color: #a7f3d0; }
+    .item-why-inner a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .item-why-inner a:hover { text-decoration: underline; }
+    .tip-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--gray-400);
+      margin-bottom: 4px;
+    }
+
+    /* ── Result Card ── */
+    .result-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 8px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+    }
+    .result-card.hidden { display: none; }
+
+    .result-emoji { font-size: 36px; margin-bottom: 12px; display: block; }
+    .result-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+    .result-range {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      opacity: 0.7;
+    }
+    .result-body {
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.65;
+    }
+
+    /* ── CTA ── */
+    .cta-block {
+      background: var(--blue);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-top: 24px;
+      text-align: center;
+    }
+    .cta-block h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 8px;
+    }
+    .cta-block p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 20px;
+    }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .cta-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    .cta-btn svg { flex-shrink: 0; }
+
+    /* ── Reset Button ── */
+    .reset-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    .reset-btn {
+      background: none;
+      border: 1px solid var(--gray-200);
+      color: var(--gray-500);
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .reset-btn:hover {
+      background: var(--gray-100);
+      color: var(--gray-700);
+      border-color: var(--gray-300);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 20px 24px 40px;
+      font-size: 13px;
+      color: var(--gray-400);
+    }
+    footer a { color: var(--gray-400); text-decoration: none; }
+    footer a:hover { color: var(--blue); }
+
+    /* ── Progress dots ── */
+    .group-progress {
+      display: flex;
+      gap: 4px;
+      margin-left: auto;
+      align-items: center;
+    }
+    .progress-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gray-200);
+      transition: background 0.2s;
+    }
+    .progress-dot.done { background: var(--green); }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .hero { padding: 36px 20px 32px; }
+      .score-banner { margin: 24px 16px 0; }
+      .main { padding: 24px 16px 50px; }
+      .item-why-inner { padding-left: 36px; }
+      .score-top { flex-direction: column; align-items: flex-start; }
+      .cta-block { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="https://cass-clearly.github.io/traderankai-site/" class="logo" target="_blank" rel="noopener">
+      <div class="logo-icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 12L6.5 7.5L9.5 10L13 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span>TradeRankAI</span>
+        <span class="logo-sub">SEO for Tradespeople</span>
+      </div>
+    </a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 1L7.5 4.5H11L8 6.5L9 10L6 8L3 10L4 6.5L1 4.5H4.5L6 1Z"/></svg>
+      Free Tool
+    </div>
+    <h1>Is Your HVAC or Plumbing Business Invisible Online?</h1>
+    <p>Run through this 15-point checklist to find the exact gaps costing you calls — and rank higher on Google.</p>
+  </div>
+</div>
+
+<div class="score-banner state-0" id="scoreBanner">
+  <div class="score-top">
+    <div>
+      <div class="score-label">Your SEO Score</div>
+    </div>
+    <div class="score-display">
+      <span class="score-number" id="scoreNum">0</span>
+      <span class="score-denom">/15</span>
+    </div>
+    <div class="score-verdict" id="scoreVerdict">Start the checklist below ↓</div>
+  </div>
+  <div class="bar-track">
+    <div class="bar-fill" id="barFill" style="width: 0%"></div>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="reset-row">
+    <button class="reset-btn" id="resetBtn" onclick="resetAll()">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 6A5 5 0 1 0 3 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M1 1.5V3.5H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Reset
+    </button>
+  </div>
+
+  <!-- GROUP 1 -->
+  <div class="group" id="group-1">
+    <div class="group-header">
+      <div class="group-icon" style="background:#e8f0fd;">📍</div>
+      <span class="group-title">Google Business Profile</span>
+      <div class="group-progress" id="dots-1">
+        <div class="progress-dot" data-dot="1-1"></div>
+        <div class="progress-dot" data-dot="1-2"></div>
+        <div class="progress-dot" data-dot="1-3"></div>
+        <div class="progress-dot" data-dot="1-4"></div>
+        <div class="progress-dot" data-dot="1-5"></div>
+      </div>
+    </div>
+    <div class="checklist">
+
+      <div class="item" id="item-1" onclick="handleItemClick(event, 1)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">GBP · 1 of 5</div>
+            <div class="item-question">Is your Google Business Profile fully filled out? <span style="color:var(--gray-400);font-weight:400;font-size:13px;">(description, categories, hours, phone, website, service area)</span></div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 1)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Google uses your GBP data to decide if your business is relevant for local searches. An incomplete profile signals low credibility — Google may not show you at all. Filling out every field takes 30 minutes and has a direct, documented impact on local pack rankings.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-2" onclick="handleItemClick(event, 2)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">GBP · 2 of 5</div>
+            <div class="item-question">Do you have at least 20 reviews — and are you actively getting new ones?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 2)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Reviews are one of Google's top 3 local ranking factors. Quantity matters, but so does recency — a business with 50 reviews from 2021 looks stagnant. Aim for a steady drip of new reviews every month. One easy tactic: text customers a Google review link right after a job.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-3" onclick="handleItemClick(event, 3)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">GBP · 3 of 5</div>
+            <div class="item-question">Have you posted on GBP in the last 7 days?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 3)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            GBP posts keep your profile active and signal to Google that the business is operating. Posts expire after 7 days, which means competitors who post weekly are consistently fresher than you. It takes 5 minutes to post a job photo, a seasonal tip, or a special offer.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-4" onclick="handleItemClick(event, 4)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">GBP · 4 of 5</div>
+            <div class="item-question">Do your GBP photos show actual work — not stock photos?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 4)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Real photos of your trucks, team, and completed jobs build trust and convert searchers into callers. Profiles with 100+ photos get significantly more direction requests. Stock photos signal that you have no real presence. Even a dozen phone snapshots of finished jobs is miles ahead of nothing.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-5" onclick="handleItemClick(event, 5)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">GBP · 5 of 5</div>
+            <div class="item-question">Is your NAP (name, address, phone) identical across Google, Yelp, and your website?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 5)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            NAP consistency is a local SEO signal. If Google sees "Joe's HVAC LLC" on your site, "Joe's HVAC" on Yelp, and "Joe's Heating & Cooling" on Angi — that confusion undermines trust in your listing. Even minor differences (Suite vs Ste, spelled-out vs abbreviation) matter. Check all three and make them exactly match.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GROUP 2 -->
+  <div class="group" id="group-2">
+    <div class="group-header">
+      <div class="group-icon" style="background:#fef9ec;">🌐</div>
+      <span class="group-title">Your Website</span>
+      <div class="group-progress" id="dots-2">
+        <div class="progress-dot" data-dot="2-1"></div>
+        <div class="progress-dot" data-dot="2-2"></div>
+        <div class="progress-dot" data-dot="2-3"></div>
+        <div class="progress-dot" data-dot="2-4"></div>
+        <div class="progress-dot" data-dot="2-5"></div>
+      </div>
+    </div>
+    <div class="checklist">
+
+      <div class="item" id="item-6" onclick="handleItemClick(event, 6)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Website · 1 of 5</div>
+            <div class="item-question">Does your homepage title tag include your city and primary service?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 6)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            The title tag is the single most weighted on-page SEO signal. If yours says "Home | Welcome to Our Site" instead of "AC Repair & HVAC Service | Denver, CO | CoolBreeze Heating," you're invisible in organic search. Check it by right-clicking your homepage → View Page Source → search for &lt;title&gt;.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-7" onclick="handleItemClick(event, 7)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Website · 2 of 5</div>
+            <div class="item-question">Do you have a dedicated page for each major service?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 7)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Google can't rank a single page for "AC repair," "furnace install," "water heater replacement," and "drain cleaning" all at once. Each service needs its own URL, its own title tag, and its own content. One-page sites or "Services" pages that list everything are SEO dead ends for competitive terms.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-8" onclick="handleItemClick(event, 8)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Website · 3 of 5</div>
+            <div class="item-question">Does your site load in under 3 seconds on mobile?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 8)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Google uses mobile-first indexing — your mobile speed score directly affects rankings. More importantly, 60% of local service searches happen on phones. A slow site loses the lead before the page even loads. Check for free at <a href="https://pagespeed.web.dev" target="_blank" rel="noopener">pagespeed.web.dev</a> — look for a score of 70+ on mobile.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-9" onclick="handleItemClick(event, 9)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Website · 4 of 5</div>
+            <div class="item-question">Is your phone number clickable on mobile?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 9)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Local customers want to call, not fill out a form. If your phone number is plain text instead of a tap-to-call link (<code style="font-size:12px;background:var(--gray-100);padding:1px 5px;border-radius:3px;">&lt;a href="tel:..."&gt;</code>), you're losing calls on every mobile visit. Test it right now on your phone. This takes a developer 2 minutes to fix.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-10" onclick="handleItemClick(event, 10)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Website · 5 of 5</div>
+            <div class="item-question">Does your website have any blog posts or articles?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 10)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Blog content is how you capture the hundreds of questions homeowners type before they even know they need a technician: "why is my AC blowing warm air," "how long do water heaters last," "signs of a gas leak." Each article is a new page Google can rank. Even 4–5 good articles per year compounds over time.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GROUP 3 -->
+  <div class="group" id="group-3">
+    <div class="group-header">
+      <div class="group-icon" style="background:#f0fdf4;">🔍</div>
+      <span class="group-title">Content &amp; Keywords</span>
+      <div class="group-progress" id="dots-3">
+        <div class="progress-dot" data-dot="3-1"></div>
+        <div class="progress-dot" data-dot="3-2"></div>
+        <div class="progress-dot" data-dot="3-3"></div>
+      </div>
+    </div>
+    <div class="checklist">
+
+      <div class="item" id="item-11" onclick="handleItemClick(event, 11)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Keywords · 1 of 3</div>
+            <div class="item-question">Does any page on your site mention "[your city] + your service" in the body text?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 11)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Google matches the words on your pages to what people type. If nobody on your site has ever written "furnace repair in Colorado Springs," Google has no signal to rank you for it. Your city name + service keywords need to appear naturally in your page copy, headings, and meta descriptions — not stuffed, just present.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-12" onclick="handleItemClick(event, 12)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Keywords · 2 of 3</div>
+            <div class="item-question">Do you rank on the first page for "[your main service] + [your city]"?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 12)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            This is the bottom-line check. Open an incognito window (or use a VPN to your city) and search "[your service] [your city]." If you're not on page 1 — in the map pack or organic results — you essentially don't exist for that query. Check how many competitors are above you and which of these checklist items they have that you don't.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-13" onclick="handleItemClick(event, 13)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Keywords · 3 of 3</div>
+            <div class="item-question">Have you ever targeted "near me" search terms?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 13)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            "Plumber near me" and "HVAC repair near me" are some of the highest-intent searches in local services — and they're exploding. Google resolves "near me" to your actual location, so you can't just stuff it everywhere. But having a page that says "looking for a trusted plumber near you in [City]?" helps signal relevance. Your GBP also heavily influences these results.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GROUP 4 -->
+  <div class="group" id="group-4">
+    <div class="group-header">
+      <div class="group-icon" style="background:#fdf4ff;">🏆</div>
+      <span class="group-title">Authority &amp; Trust</span>
+      <div class="group-progress" id="dots-4">
+        <div class="progress-dot" data-dot="4-1"></div>
+        <div class="progress-dot" data-dot="4-2"></div>
+      </div>
+    </div>
+    <div class="checklist">
+
+      <div class="item" id="item-14" onclick="handleItemClick(event, 14)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Authority · 1 of 2</div>
+            <div class="item-question">Does your website have any backlinks from local sources?</div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 14)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Links from other websites to yours are votes of authority. Local links — local newspaper, chamber of commerce, neighborhood blog, local charity you sponsor — carry extra weight for local SEO. Check what you have for free at <a href="https://ahrefs.com/free-backlink-checker" target="_blank" rel="noopener">ahrefs.com/free-backlink-checker</a>. Even 5–10 good local links can separate you from competitors.
+          </div>
+        </div>
+      </div>
+
+      <div class="item" id="item-15" onclick="handleItemClick(event, 15)">
+        <div class="item-main">
+          <div class="check-box">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none"><path d="M1 5L4.5 8.5L11 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-number">Authority · 2 of 2</div>
+            <div class="item-question">Is your site listed in major directories? <span style="color:var(--gray-400);font-weight:400;font-size:13px;">(Yelp, BBB, Angi, Thumbtack)</span></div>
+          </div>
+          <button class="item-toggle" onclick="toggleWhy(event, 15)" aria-label="Why it matters">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="item-why">
+          <div class="item-why-inner">
+            <div class="tip-label">Why it matters</div>
+            Major directories (Yelp, BBB, Angi, Thumbtack, HomeAdvisor) do two things: they send direct leads, and they pass "citation authority" to your business — reinforcing your NAP data for Google. They also rank well themselves, meaning your listing might appear on page 1 even if your site doesn't yet. Free to create; zero reason not to be in all of them.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RESULT CARD -->
+  <div class="result-card hidden" id="resultCard">
+    <span class="result-emoji" id="resultEmoji">🎉</span>
+    <div class="result-range" id="resultRange"></div>
+    <div class="result-title" id="resultTitle"></div>
+    <div class="result-body" id="resultBody"></div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h3>Want someone to handle the content side for you?</h3>
+    <p>TradeRankAI helps HVAC and plumbing companies rank higher with done-for-you SEO content — no jargon, no fluff, just calls.</p>
+    <a href="https://cass-clearly.github.io/traderankai-site/" target="_blank" rel="noopener" class="cta-btn">
+      Visit TradeRankAI.com
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7H11M8 4L11 7L8 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  Built by <a href="https://cass-clearly.github.io/traderankai-site/" target="_blank" rel="noopener">TradeRankAI</a> — Free SEO tools for tradespeople.
+</footer>
+
+<script>
+  // ── State ──
+  const checked = new Set();
+  const open = new Set();
+
+  // Group membership map (item# → [groupId, dotIndex])
+  const groupMap = {
+    1:[1,0], 2:[1,1], 3:[1,2], 4:[1,3], 5:[1,4],
+    6:[2,0], 7:[2,1], 8:[2,2], 9:[2,3], 10:[2,4],
+    11:[3,0], 12:[3,1], 13:[3,2],
+    14:[4,0], 15:[4,1]
+  };
+
+  function handleItemClick(e, id) {
+    // Don't toggle check if the click was on the toggle button
+    if (e.target.closest('.item-toggle')) return;
+    toggleCheck(id);
+  }
+
+  function toggleCheck(id) {
+    const el = document.getElementById('item-' + id);
+    if (checked.has(id)) {
+      checked.delete(id);
+      el.classList.remove('checked');
+    } else {
+      checked.add(id);
+      el.classList.add('checked');
+    }
+    updateScore();
+    updateDot(id);
+  }
+
+  function toggleWhy(e, id) {
+    e.stopPropagation();
+    const el = document.getElementById('item-' + id);
+    if (open.has(id)) {
+      open.delete(id);
+      el.classList.remove('open');
+    } else {
+      open.add(id);
+      el.classList.add('open');
+    }
+  }
+
+  function updateDot(id) {
+    const [groupId, dotIdx] = groupMap[id];
+    const dots = document.querySelectorAll(`[data-dot="${groupId}-${dotIdx+1}"]`);
+    dots.forEach(d => {
+      if (checked.has(id)) d.classList.add('done');
+      else d.classList.remove('done');
+    });
+  }
+
+  function getScoreState(score) {
+    if (score === 0) return 'state-0';
+    if (score <= 4) return 'state-red';
+    if (score <= 8) return 'state-orange';
+    if (score <= 12) return 'state-yellow';
+    return 'state-green';
+  }
+
+  function updateScore() {
+    const score = checked.size;
+    const pct = (score / 15) * 100;
+
+    document.getElementById('scoreNum').textContent = score;
+    document.getElementById('barFill').style.width = pct + '%';
+
+    const banner = document.getElementById('scoreBanner');
+    banner.className = 'score-banner ' + getScoreState(score);
+
+    const verdict = document.getElementById('scoreVerdict');
+    if (score === 0) {
+      verdict.textContent = 'Start the checklist below ↓';
+    } else if (score <= 4) {
+      verdict.textContent = 'Essentially invisible online';
+    } else if (score <= 8) {
+      verdict.textContent = 'Leaving serious business on the table';
+    } else if (score <= 12) {
+      verdict.textContent = 'Significant gaps — fixable';
+    } else {
+      verdict.textContent = 'Solid foundation';
+    }
+
+    updateResultCard(score);
+  }
+
+  const results = [
+    {
+      range: '0–4 checked',
+      min: 0, max: 4,
+      emoji: '😬',
+      title: 'Essentially invisible online.',
+      body: "You're missing the foundational signals Google uses to find and trust local businesses. The good news: almost every item on this list is fixable without spending money on ads. Start with your Google Business Profile — fill it out completely, upload real photos, and get your first 10 reviews. That alone can move you into the local map pack for less-competitive terms. Then tackle your website title tags and NAP consistency. These basics compound fast when they're all in place.",
+      state: 'state-red'
+    },
+    {
+      range: '5–8 checked',
+      min: 5, max: 8,
+      emoji: '⚠️',
+      title: 'You\'re leaving serious business on the table.',
+      body: "You have some signals in place, but there are critical gaps that competitors are exploiting. The highest-leverage fixes at this stage are usually service-specific pages on your website and consistent GBP activity (posts, reviews, photos). Most businesses in this range are showing up in the local pack occasionally — but they're getting outranked by competitors who have content for each individual service. Fixing 3–4 more items here could realistically move you 2–3 positions in the map pack.",
+      state: 'state-orange'
+    },
+    {
+      range: '9–12 checked',
+      min: 9, max: 12,
+      emoji: '📈',
+      title: 'Significant gaps — but you\'re closer than you think.',
+      body: "You've got a real foundation. The remaining gaps are typically in content depth (blog articles, "near me" pages, keyword-rich copy) and authority signals (backlinks, directory listings). Businesses at this score often rank on page 1 for some queries but get pushed down for competitive ones. A consistent content strategy — even just one article per month — and a few local backlinks can push you into the top 3 map positions where 80% of the clicks go.",
+      state: 'state-yellow'
+    },
+    {
+      range: '13–15 checked',
+      min: 13, max: 15,
+      emoji: '🏆',
+      title: 'Solid foundation. Now it\'s a volume game.',
+      body: "You've done the hard structural work that most competitors haven't. At this level, ranking gains come from content volume (more service pages, more blog articles, more city-specific landing pages) and link authority (more local backlinks, more directory citations, PR mentions). The businesses that dominate local search in competitive markets aren't necessarily smarter — they just have more good content indexed over more time. Keep the GBP active, keep producing content, and the compounding kicks in.",
+      state: 'state-green'
+    }
+  ];
+
+  function updateResultCard(score) {
+    const card = document.getElementById('resultCard');
+    if (score === 0) { card.classList.add('hidden'); return; }
+
+    const r = results.find(x => score >= x.min && score <= x.max);
+    if (!r) return;
+
+    document.getElementById('resultEmoji').textContent = r.emoji;
+    document.getElementById('resultRange').textContent = r.range;
+    document.getElementById('resultTitle').textContent = r.title;
+    document.getElementById('resultBody').textContent = r.body;
+
+    card.className = 'result-card';
+    card.style.borderColor = '';
+    if (r.state === 'state-red') {
+      card.style.borderColor = '#fca5a5';
+      card.style.background = 'var(--red-bg)';
+    } else if (r.state === 'state-orange') {
+      card.style.borderColor = '#fdba74';
+      card.style.background = 'var(--orange-bg)';
+    } else if (r.state === 'state-yellow') {
+      card.style.borderColor = '#fcd34d';
+      card.style.background = 'var(--yellow-bg)';
+    } else if (r.state === 'state-green') {
+      card.style.borderColor = '#a7f3d0';
+      card.style.background = 'var(--green-bg)';
+    }
+  }
+
+  function resetAll() {
+    checked.clear();
+    open.clear();
+    document.querySelectorAll('.item').forEach(el => {
+      el.classList.remove('checked', 'open');
+    });
+    document.querySelectorAll('.progress-dot').forEach(d => d.classList.remove('done'));
+    updateScore();
+  }
+
+  // Initialize
+  updateScore();
+</script>
+</body>
+</html>
