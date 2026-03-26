@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TradeRank AI — SEO Content for HVAC, Plumbing & Home Service Companies</title>
+<style>
+  :root {
+    --blue: #1a56db;
+    --dark: #111827;
+    --gray: #6b7280;
+    --light: #f9fafb;
+    --green: #059669;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--dark); background: #fff; }
+
+  /* Nav */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 48px; border-bottom: 1px solid var(--border); }
+  .logo { font-size: 22px; font-weight: 800; color: var(--blue); letter-spacing: -0.5px; }
+  .logo span { color: var(--dark); }
+  nav a { color: var(--gray); text-decoration: none; font-size: 15px; }
+  .nav-cta { background: var(--blue); color: white !important; padding: 10px 20px; border-radius: 8px; font-weight: 600; }
+
+  /* Hero */
+  .hero { text-align: center; padding: 80px 24px 60px; max-width: 800px; margin: 0 auto; }
+  .badge { display: inline-block; background: #eff6ff; color: var(--blue); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; }
+  h1 { font-size: 52px; font-weight: 900; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 20px; }
+  h1 em { color: var(--blue); font-style: normal; }
+  .hero-sub { font-size: 20px; color: var(--gray); line-height: 1.6; max-width: 600px; margin: 0 auto 36px; }
+  .hero-cta { display: inline-block; background: var(--blue); color: white; padding: 16px 32px; border-radius: 10px; font-size: 17px; font-weight: 700; text-decoration: none; margin-right: 12px; }
+  .hero-secondary { display: inline-block; color: var(--gray); font-size: 15px; padding: 16px 20px; text-decoration: underline; cursor: pointer; }
+  .social-proof { margin-top: 32px; font-size: 14px; color: var(--gray); }
+  .social-proof strong { color: var(--dark); }
+
+  /* Problem */
+  .section { padding: 80px 24px; }
+  .section-inner { max-width: 900px; margin: 0 auto; }
+  .section-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--blue); margin-bottom: 12px; }
+  h2 { font-size: 38px; font-weight: 800; line-height: 1.2; letter-spacing: -1px; margin-bottom: 16px; }
+  .section-sub { font-size: 18px; color: var(--gray); line-height: 1.6; margin-bottom: 48px; }
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .problem-card { background: #fff5f5; border: 1px solid #fca5a5; border-radius: 12px; padding: 24px; }
+  .problem-card h3 { font-size: 16px; font-weight: 700; color: #dc2626; margin-bottom: 8px; }
+  .problem-card p { font-size: 14px; color: #6b7280; line-height: 1.5; }
+
+  /* How it works */
+  .gray-section { background: var(--light); }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .step { text-align: center; }
+  .step-num { width: 48px; height: 48px; background: var(--blue); color: white; border-radius: 50%; font-size: 20px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+  .step h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+  .step p { font-size: 15px; color: var(--gray); line-height: 1.5; }
+
+  /* What you get */
+  .deliverables { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .deliverable { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border: 1px solid var(--border); border-radius: 10px; }
+  .deliverable-icon { font-size: 24px; flex-shrink: 0; }
+  .deliverable h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .deliverable p { font-size: 14px; color: var(--gray); line-height: 1.4; }
+
+  /* Pricing */
+  .pricing-card { max-width: 480px; margin: 0 auto; background: var(--dark); color: white; border-radius: 20px; padding: 48px; text-align: center; }
+  .pricing-card .price { font-size: 64px; font-weight: 900; letter-spacing: -2px; margin: 16px 0 4px; }
+  .pricing-card .period { font-size: 18px; color: #9ca3af; margin-bottom: 32px; }
+  .pricing-features { list-style: none; margin-bottom: 36px; }
+  .pricing-features li { padding: 10px 0; border-bottom: 1px solid #374151; font-size: 16px; color: #d1d5db; }
+  .pricing-features li:first-child { border-top: 1px solid #374151; }
+  .checkmark { color: #34d399; margin-right: 8px; }
+  .pricing-cta { display: block; background: var(--blue); color: white; padding: 18px 32px; border-radius: 10px; font-size: 18px; font-weight: 700; text-decoration: none; }
+  .pricing-note { margin-top: 16px; font-size: 13px; color: #9ca3af; }
+
+  /* Sample content */
+  .sample-box { background: var(--light); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-top: 32px; }
+  .sample-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+  .sample-box .meta { font-size: 13px; color: var(--gray); margin-bottom: 20px; }
+  .sample-box .excerpt { font-size: 15px; color: var(--dark); line-height: 1.7; }
+  .sample-box .excerpt p { margin-bottom: 12px; }
+
+  /* FAQ */
+  .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .faq-q { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+  .faq-a { font-size: 15px; color: var(--gray); line-height: 1.6; }
+
+  /* CTA banner */
+  .cta-banner { background: var(--blue); color: white; text-align: center; padding: 80px 24px; }
+  .cta-banner h2 { font-size: 40px; font-weight: 900; margin-bottom: 16px; }
+  .cta-banner p { font-size: 18px; opacity: 0.85; margin-bottom: 32px; }
+  .cta-banner a { background: white; color: var(--blue); padding: 16px 36px; border-radius: 10px; font-size: 17px; font-weight: 800; text-decoration: none; }
+
+  /* Footer */
+  footer { padding: 40px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; color: var(--gray); font-size: 14px; }
+
+  @media (max-width: 768px) {
+    nav { padding: 16px 20px; }
+    h1 { font-size: 36px; }
+    .problem-grid, .steps, .deliverables { grid-template-columns: 1fr; }
+    .pricing-card { padding: 32px 24px; }
+    footer { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">TradeRank<span>AI</span></div>
+  <a href="#pricing" class="nav-cta">Get Started →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">🔧 Built for HVAC, Plumbing & Home Services</div>
+  <h1>Your Competitors Are <em>Ranking.</em><br>You're Not. We Fix That.</h1>
+  <p class="hero-sub">Done-for-you AI SEO content that gets your home service business found on Google — without you writing a single word.</p>
+  <a href="#pricing" class="hero-cta">Start Ranking — $797/mo</a>
+  <span class="hero-secondary">See a sample post ↓</span>
+  <p class="social-proof">Launching March 2026 · <strong>First 10 clients get locked-in pricing forever</strong></p>
+</section>
+
+<!-- PROBLEM -->
+<section class="section">
+  <div class="section-inner">
+    <p class="section-label">The Problem</p>
+    <h2>You're losing jobs to competitors who show up first on Google.</h2>
+    <p class="section-sub">Most HVAC and plumbing companies have a website that does nothing. No new content, no local SEO, no Google Business Posts. Meanwhile, a competitor down the street is capturing every search.</p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <h3>❌ No time to write</h3>
+        <p>You're running a crew, answering calls, ordering parts. Who has time to write blog posts about "how to fix a leaky faucet"?</p>
+      </div>
+      <div class="problem-card">
+        <h3>❌ Agencies cost $2,000+/month</h3>
+        <p>Traditional SEO agencies charge $1,500–$3,500/month and take 6 months to show results. Most contractors can't justify it.</p>
+      </div>
+      <div class="problem-card">
+        <h3>❌ DIY tools don't rank</h3>
+        <p>Generic AI tools produce generic content. Google knows the difference — and penalizes it.</p>
+      </div>
+      <div class="problem-card">
+        <h3>❌ Missed calls = lost revenue</h3>
+        <p>Every day your competitor ranks above you, that's a $300–$2,000 job going to them instead of you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section gray-section">
+  <div class="section-inner">
+    <p class="section-label">How It Works</p>
+    <h2>SEO content, done for you. Every month.</h2>
+    <p class="section-sub">We handle everything. You approve. Google rewards you.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>We learn your business</h3>
+        <p>Quick onboarding call (or form). We learn your service area, top services, and competitors. Takes 15 minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>We write and publish</h3>
+        <p>Our AI + editorial system produces locally-optimized blog posts, service pages, and GBP content every month.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>You start ranking</h3>
+        <p>More content → more local search visibility → more calls. We track every keyword and show you the data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="section">
+  <div class="section-inner">
+    <p class="section-label">What's Included</p>
+    <h2>Everything you need to dominate local search.</h2>
+    <p class="section-sub">No fluff. No upsells. One flat price.</p>
+    <div class="deliverables">
+      <div class="deliverable">
+        <div class="deliverable-icon">📝</div>
+        <div>
+          <h3>6 SEO Blog Posts / Month</h3>
+          <p>1,000–1,500 word articles targeting high-intent local keywords. "Best HVAC company in [City]", "emergency plumber near me", etc.</p>
+        </div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">📍</div>
+        <div>
+          <h3>8 Google Business Profile Posts</h3>
+          <p>2 posts per week that keep your GBP active and signaling to Google that you're a real, operating business.</p>
+        </div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">🔧</div>
+        <div>
+          <h3>Monthly Service Page Refresh</h3>
+          <p>One core service page updated each month with fresh, keyword-rich content that doesn't go stale.</p>
+        </div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-icon">📊</div>
+        <div>
+          <h3>Monthly Rank Report</h3>
+          <p>See exactly which keywords you're climbing for. No hidden metrics — just clear data on how your rankings are growing.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SAMPLE CONTENT -->
+    <div class="sample-box">
+      <h3>Sample: "5 Signs Your HVAC System Needs Emergency Repair (Don't Ignore #3)"</h3>
+      <p class="meta">Targeting: "HVAC emergency repair [City]" · Est. 1,200 words · Grade 8 reading level</p>
+      <div class="excerpt">
+        <p>Your HVAC system runs 24/7 — until it doesn't. Most homeowners in [City] wait too long before calling for emergency HVAC repair, and that waiting costs them anywhere from a few hundred to several thousand dollars in preventable damage.</p>
+        <p>Here are the five warning signs that mean you need to call an HVAC technician today, not next week...</p>
+        <p><strong>1. Your system is blowing warm air in cooling mode.</strong> If your AC is running but the air coming out feels warm or room temperature, this isn't a thermostat issue — it's usually a refrigerant leak or a failing compressor. Both require an emergency service call...</p>
+        <p style="color: #9ca3af; font-style: italic;">[Full article continues for 1,100+ more words, locally optimized for [City], [State]]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section gray-section" id="pricing">
+  <div class="section-inner" style="text-align: center;">
+    <p class="section-label">Pricing</p>
+    <h2>One plan. No contracts. Cancel anytime.</h2>
+    <p class="section-sub">Half the cost of a traditional SEO agency. All the output. None of the BS.</p>
+    <div class="pricing-card">
+      <div style="font-size: 14px; background: #059669; display: inline-block; padding: 6px 14px; border-radius: 100px; font-weight: 700; letter-spacing: 0.5px;">🔥 FOUNDING MEMBER PRICE</div>
+      <div class="price">$797</div>
+      <div class="period">per month · cancel anytime</div>
+      <ul class="pricing-features">
+        <li><span class="checkmark">✓</span> 6 SEO blog posts (1,000–1,500 words each)</li>
+        <li><span class="checkmark">✓</span> 8 Google Business Profile posts</li>
+        <li><span class="checkmark">✓</span> Monthly service page refresh</li>
+        <li><span class="checkmark">✓</span> Monthly keyword rank report</li>
+        <li><span class="checkmark">✓</span> Local keyword research included</li>
+        <li><span class="checkmark">✓</span> Content calendar sent every month</li>
+        <li><span class="checkmark">✓</span> Price locked forever (founding members only)</li>
+      </ul>
+      <a href="mailto:hello@traderankai.com?subject=I want to start ranking" class="pricing-cta">Claim Your Spot →</a>
+      <p class="pricing-note">First 10 clients only. Price goes to $1,297/mo after launch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="section-inner" style="max-width: 640px;">
+    <p class="section-label">FAQ</p>
+    <h2>Common questions.</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">How is this different from other SEO agencies?</div>
+      <div class="faq-a">We're built specifically for home service companies — HVAC, plumbing, roofing, electrical. Generic agencies use generic templates. We know the keywords, the search intent, and the content formats that work in your industry. And we're half the price.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How long until I see results?</div>
+      <div class="faq-a">SEO takes time — usually 2–4 months before you see significant ranking movement. But your content starts going live in week one, and Google starts indexing it immediately.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do I have to do anything?</div>
+      <div class="faq-a">After a 15-minute onboarding form or call, basically nothing. We write, we publish, we track. You get a monthly report and a content calendar preview. That's it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I cancel anytime?</div>
+      <div class="faq-a">Yes. No contracts, no annual commitments. Cancel with 30 days notice. Simple.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What do you need from me to start?</div>
+      <div class="faq-a">Your service area (city/region), the services you offer, your website URL (if you have one), and access to your Google Business Profile. We handle the rest.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <h2>Ready to start showing up on Google?</h2>
+  <p>Join the first 10 founding members and lock in your rate forever.</p>
+  <a href="mailto:hello@traderankai.com?subject=I want to start ranking">Claim Founding Member Pricing →</a>
+</section>
+
+<footer>
+  <div class="logo" style="font-size: 18px;">TradeRank<span>AI</span></div>
+  <div>© 2026 TradeRankAI · hello@traderankai.com</div>
+</footer>
+
+</body>
+</html>
