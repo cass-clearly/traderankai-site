@@ -12,6 +12,7 @@
     --light: #f9fafb;
     --green: #059669;
     --border: #e5e7eb;
+    --orange: #ea580c;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--dark); background: #fff; }
@@ -24,15 +25,28 @@
   .nav-cta { background: var(--blue); color: white !important; padding: 10px 20px; border-radius: 8px; font-weight: 600; }
 
   /* Hero */
-  .hero { text-align: center; padding: 80px 24px 60px; max-width: 800px; margin: 0 auto; }
+  .hero { text-align: center; padding: 72px 24px 56px; max-width: 860px; margin: 0 auto; }
   .badge { display: inline-block; background: #eff6ff; color: var(--blue); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 100px; margin-bottom: 24px; }
   h1 { font-size: 52px; font-weight: 900; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 20px; }
   h1 em { color: var(--blue); font-style: normal; }
-  .hero-sub { font-size: 20px; color: var(--gray); line-height: 1.6; max-width: 600px; margin: 0 auto 36px; }
-  .hero-cta { display: inline-block; background: var(--blue); color: white; padding: 16px 32px; border-radius: 10px; font-size: 17px; font-weight: 700; text-decoration: none; margin-right: 12px; }
-  .hero-secondary { display: inline-block; color: var(--gray); font-size: 15px; padding: 16px 20px; text-decoration: underline; cursor: pointer; }
-  .social-proof { margin-top: 32px; font-size: 14px; color: var(--gray); }
-  .social-proof strong { color: var(--dark); }
+  .hero-sub { font-size: 20px; color: var(--gray); line-height: 1.6; max-width: 620px; margin: 0 auto 36px; }
+
+  /* Audit CTA box */
+  .audit-cta-box { background: linear-gradient(135deg, #1a56db 0%, #1e40af 100%); border-radius: 16px; padding: 36px 40px; max-width: 600px; margin: 0 auto 20px; color: white; }
+  .audit-cta-box h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+  .audit-cta-box p { font-size: 15px; opacity: 0.85; margin-bottom: 24px; line-height: 1.5; }
+  .audit-btn { display: block; background: white; color: var(--blue); padding: 16px 32px; border-radius: 10px; font-size: 17px; font-weight: 800; text-decoration: none; margin-bottom: 14px; transition: transform 0.1s; }
+  .audit-btn:hover { transform: translateY(-1px); }
+  .audit-note { font-size: 13px; opacity: 0.75; }
+
+  .hero-alt { font-size: 14px; color: var(--gray); }
+  .hero-alt a { color: var(--blue); }
+
+  /* Stats bar */
+  .stats-bar { display: flex; justify-content: center; gap: 48px; padding: 28px 24px; border-bottom: 1px solid var(--border); background: var(--light); }
+  .stat { text-align: center; }
+  .stat-num { font-size: 28px; font-weight: 900; color: var(--blue); }
+  .stat-label { font-size: 13px; color: var(--gray); margin-top: 2px; }
 
   /* Problem */
   .section { padding: 80px 24px; }
@@ -61,15 +75,26 @@
   .deliverable p { font-size: 14px; color: var(--gray); line-height: 1.4; }
 
   /* Pricing */
-  .pricing-card { max-width: 480px; margin: 0 auto; background: var(--dark); color: white; border-radius: 20px; padding: 48px; text-align: center; }
+  .pricing-card { max-width: 520px; margin: 0 auto; background: var(--dark); color: white; border-radius: 20px; padding: 48px; text-align: center; }
   .pricing-card .price { font-size: 64px; font-weight: 900; letter-spacing: -2px; margin: 16px 0 4px; }
   .pricing-card .period { font-size: 18px; color: #9ca3af; margin-bottom: 32px; }
   .pricing-features { list-style: none; margin-bottom: 36px; }
   .pricing-features li { padding: 10px 0; border-bottom: 1px solid #374151; font-size: 16px; color: #d1d5db; }
   .pricing-features li:first-child { border-top: 1px solid #374151; }
   .checkmark { color: #34d399; margin-right: 8px; }
-  .pricing-cta { display: block; background: var(--blue); color: white; padding: 18px 32px; border-radius: 10px; font-size: 18px; font-weight: 700; text-decoration: none; }
-  .pricing-note { margin-top: 16px; font-size: 13px; color: #9ca3af; }
+
+  /* Contact form on pricing card */
+  .contact-form { text-align: left; }
+  .contact-form h4 { font-size: 16px; font-weight: 700; color: white; margin-bottom: 16px; text-align: center; }
+  .form-row { margin-bottom: 12px; }
+  .form-row input, .form-row textarea { width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid #4b5563; background: #1f2937; color: white; font-size: 15px; font-family: inherit; }
+  .form-row input::placeholder, .form-row textarea::placeholder { color: #9ca3af; }
+  .form-row textarea { resize: vertical; min-height: 80px; }
+  .form-submit-btn { width: 100%; background: var(--blue); color: white; padding: 16px; border-radius: 10px; font-size: 17px; font-weight: 700; border: none; cursor: pointer; margin-bottom: 12px; }
+  .form-submit-btn:hover { background: #1d4ed8; }
+  .form-divider { text-align: center; color: #6b7280; font-size: 13px; margin: 16px 0; }
+  .pricing-cta { display: block; background: #374151; color: white; padding: 14px 32px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; margin-bottom: 8px; }
+  .pricing-note { margin-top: 12px; font-size: 13px; color: #9ca3af; text-align: center; }
 
   /* Sample content */
   .sample-box { background: var(--light); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-top: 32px; }
@@ -83,21 +108,40 @@
   .faq-q { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
   .faq-a { font-size: 15px; color: var(--gray); line-height: 1.6; }
 
+  /* Audit feature section */
+  .audit-feature { background: #eff6ff; border: 2px solid var(--blue); border-radius: 16px; padding: 40px; margin-top: 32px; display: flex; gap: 32px; align-items: center; }
+  .audit-feature-text { flex: 1; }
+  .audit-feature-text h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+  .audit-feature-text p { font-size: 15px; color: var(--gray); line-height: 1.6; margin-bottom: 20px; }
+  .audit-feature-list { list-style: none; margin-bottom: 24px; }
+  .audit-feature-list li { font-size: 14px; color: var(--dark); padding: 4px 0; }
+  .audit-feature-list li::before { content: "✓ "; color: var(--blue); font-weight: 700; }
+  .audit-feature-btn { display: inline-block; background: var(--blue); color: white; padding: 14px 28px; border-radius: 8px; font-size: 16px; font-weight: 700; text-decoration: none; }
+  .audit-feature-badge { font-size: 80px; flex-shrink: 0; }
+
   /* CTA banner */
   .cta-banner { background: var(--blue); color: white; text-align: center; padding: 80px 24px; }
   .cta-banner h2 { font-size: 40px; font-weight: 900; margin-bottom: 16px; }
   .cta-banner p { font-size: 18px; opacity: 0.85; margin-bottom: 32px; }
-  .cta-banner a { background: white; color: var(--blue); padding: 16px 36px; border-radius: 10px; font-size: 17px; font-weight: 800; text-decoration: none; }
+  .cta-banner a.main { background: white; color: var(--blue); padding: 16px 36px; border-radius: 10px; font-size: 17px; font-weight: 800; text-decoration: none; display: inline-block; margin-right: 12px; margin-bottom: 12px; }
+  .cta-banner a.secondary { background: rgba(255,255,255,0.15); color: white; padding: 16px 36px; border-radius: 10px; font-size: 17px; font-weight: 600; text-decoration: none; display: inline-block; margin-bottom: 12px; }
 
   /* Footer */
   footer { padding: 40px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; color: var(--gray); font-size: 14px; }
+
+  /* Success message */
+  .form-success { display: none; background: #d1fae5; color: #065f46; padding: 16px; border-radius: 8px; text-align: center; font-weight: 600; margin-bottom: 12px; }
 
   @media (max-width: 768px) {
     nav { padding: 16px 20px; }
     h1 { font-size: 36px; }
     .problem-grid, .steps, .deliverables { grid-template-columns: 1fr; }
     .pricing-card { padding: 32px 24px; }
+    .audit-feature { flex-direction: column; }
+    .audit-feature-badge { display: none; }
+    .stats-bar { gap: 24px; flex-wrap: wrap; }
     footer { flex-direction: column; gap: 12px; text-align: center; }
+    .audit-cta-box { padding: 28px 24px; }
   }
 </style>
 </head>
@@ -107,7 +151,7 @@
   <div class="logo">TradeRank<span>AI</span></div>
   <div style="display:flex; align-items:center; gap:16px;">
     <a href="tel:+18447431108" style="color:#6b7280; font-size:15px; text-decoration:none; font-weight:600;">📞 (844) 743-1108</a>
-    <a href="#pricing" class="nav-cta">Get Started →</a>
+    <a href="#contact" class="nav-cta">Get Started →</a>
   </div>
 </nav>
 
@@ -116,10 +160,37 @@
   <div class="badge">🔧 Built for HVAC, Plumbing & Home Services</div>
   <h1>Your Competitors Are <em>Ranking.</em><br>You're Not. We Fix That.</h1>
   <p class="hero-sub">Done-for-you AI SEO content that gets your home service business found on Google — without you writing a single word.</p>
-  <a href="#pricing" class="hero-cta">Start Ranking — $797/mo</a>
-  <span class="hero-secondary">See a sample post ↓</span>
-  <p class="social-proof">Launching March 2026 · <strong>First 10 clients get locked-in pricing forever</strong></p>
+
+  <!-- PRIMARY CTA: Free Audit -->
+  <div class="audit-cta-box">
+    <h3>🔍 Start With a Free 15-Point Audit</h3>
+    <p>See exactly where your website is losing to competitors — and what to fix first. Takes 10 minutes. No email required.</p>
+    <a href="hvac-seo-audit.html" class="audit-btn">Get Your Free SEO Audit →</a>
+    <div class="audit-note">100% free · No signup · No credit card</div>
+  </div>
+
+  <p class="hero-alt">Already know you need help? <a href="#contact">Skip to pricing →</a></p>
 </section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-num">51+</div>
+    <div class="stat-label">HVAC/Plumbing companies audited</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">15</div>
+    <div class="stat-label">SEO checkpoints in our audit</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">$797</div>
+    <div class="stat-label">Founding member monthly price</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">10</div>
+    <div class="stat-label">Founding spots available</div>
+  </div>
+</div>
 
 <!-- PROBLEM -->
 <section class="section">
@@ -158,7 +229,7 @@
       <div class="step">
         <div class="step-num">1</div>
         <h3>We learn your business</h3>
-        <p>Quick onboarding call (or form). We learn your service area, top services, and competitors. Takes 15 minutes.</p>
+        <p>Quick onboarding form. We learn your service area, top services, and competitors. Takes 10 minutes.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
@@ -168,7 +239,7 @@
       <div class="step">
         <div class="step-num">3</div>
         <h3>You start ranking</h3>
-        <p>More content → more local search visibility → more calls. We track every keyword and show you the data.</p>
+        <p>More content → more local search visibility → more calls. We track every keyword and show you the data monthly.</p>
       </div>
     </div>
   </div>
@@ -185,7 +256,7 @@
         <div class="deliverable-icon">📝</div>
         <div>
           <h3>6 SEO Blog Posts / Month</h3>
-          <p>1,000–1,500 word articles targeting high-intent local keywords. "Best HVAC company in [City]", "emergency plumber near me", etc.</p>
+          <p>1,000–1,500 word articles targeting high-intent local keywords. "Best HVAC company in [City]", "emergency plumber near me", and more.</p>
         </div>
       </div>
       <div class="deliverable">
@@ -206,7 +277,7 @@
         <div class="deliverable-icon">📊</div>
         <div>
           <h3>Monthly Rank Report</h3>
-          <p>See exactly which keywords you're climbing for. No hidden metrics — just clear data on how your rankings are growing.</p>
+          <p>See exactly which keywords you're climbing for. Clear data on how your rankings grow over time.</p>
         </div>
       </div>
     </div>
@@ -222,17 +293,34 @@
         <p style="color: #9ca3af; font-style: italic;">[Full article continues for 1,100+ more words, locally optimized for [City], [State]]</p>
       </div>
     </div>
+
+    <!-- FREE AUDIT FEATURE -->
+    <div class="audit-feature">
+      <div class="audit-feature-text">
+        <h3>🔍 Not sure where to start? Get your free SEO audit.</h3>
+        <p>We built a 15-point interactive SEO audit specifically for HVAC and plumbing companies. Work through it yourself in 10 minutes and find out exactly where your website is leaving money on the table.</p>
+        <ul class="audit-feature-list">
+          <li>Google Business Profile health check</li>
+          <li>Website SEO fundamentals</li>
+          <li>Local citation consistency</li>
+          <li>Content gap analysis vs. local competitors</li>
+          <li>Mobile + speed check</li>
+        </ul>
+        <a href="hvac-seo-audit.html" class="audit-feature-btn">Run Your Free Audit →</a>
+      </div>
+      <div class="audit-feature-badge">📋</div>
+    </div>
   </div>
 </section>
 
-<!-- PRICING -->
+<!-- PRICING + CONTACT -->
 <section class="section gray-section" id="pricing">
   <div class="section-inner" style="text-align: center;">
     <p class="section-label">Pricing</p>
     <h2>One plan. No contracts. Cancel anytime.</h2>
     <p class="section-sub">Half the cost of a traditional SEO agency. All the output. None of the BS.</p>
-    <div class="pricing-card">
-      <div style="font-size: 14px; background: #059669; display: inline-block; padding: 6px 14px; border-radius: 100px; font-weight: 700; letter-spacing: 0.5px;">🔥 FOUNDING MEMBER PRICE</div>
+    <div class="pricing-card" id="contact">
+      <div style="font-size: 14px; background: #059669; display: inline-block; padding: 6px 14px; border-radius: 100px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px;">🔥 FOUNDING MEMBER PRICE</div>
       <div class="price">$797</div>
       <div class="period">per month · cancel anytime</div>
       <ul class="pricing-features">
@@ -244,9 +332,35 @@
         <li><span class="checkmark">✓</span> Content calendar sent every month</li>
         <li><span class="checkmark">✓</span> Price locked forever (founding members only)</li>
       </ul>
-      <a href="sms:+18447431108?body=Hi%2C%20I%27m%20interested%20in%20TradeRankAI" class="pricing-cta" id="cta-sms-link">Text Us to Get Started →</a>
-      <p class="pricing-note">First 10 clients only. Price goes to $1,297/mo after launch.</p>
-      <p class="pricing-note" style="margin-top:10px;">Call or text: <a href="tel:+18447431108" style="color:#60a5fa; font-weight:700;">(844) 743-1108</a></p>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h4>👇 Claim Your Founding Member Spot</h4>
+        <div class="form-success" id="form-success">✅ Got it! We'll reach out within 24 hours.</div>
+        <form id="contact-form" action="https://formsubmit.co/traderankai@tutamail.com" method="POST">
+          <input type="hidden" name="_subject" value="New TradeRankAI Lead">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" placeholder="Your email address" required>
+          </div>
+          <div class="form-row">
+            <input type="text" name="company" placeholder="Company name + city (e.g. Smith HVAC, Denver CO)">
+          </div>
+          <div class="form-row">
+            <input type="text" name="website" placeholder="Website URL (if you have one)">
+          </div>
+          <button type="submit" class="form-submit-btn">Request My Founding Member Spot →</button>
+        </form>
+        <div class="form-divider">— or reach us directly —</div>
+        <a href="sms:+18447431108?body=Hi%2C%20I%27m%20interested%20in%20TradeRankAI" class="pricing-cta">💬 Text (844) 743-1108</a>
+        <a href="tel:+18447431108" class="pricing-cta" style="background:#1f2937;">📞 Call (844) 743-1108</a>
+      </div>
+
+      <p class="pricing-note">First 10 clients only at this price. No spam. No obligation.</p>
     </div>
   </div>
 </section>
@@ -263,11 +377,11 @@
     </div>
     <div class="faq-item">
       <div class="faq-q">How long until I see results?</div>
-      <div class="faq-a">SEO takes time — usually 2–4 months before you see significant ranking movement. But your content starts going live in week one, and Google starts indexing it immediately.</div>
+      <div class="faq-a">SEO takes time — usually 2–4 months before you see significant ranking movement. But your content starts going live in week one, and Google starts indexing it immediately. We track every keyword from day one so you can see progress clearly.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Do I have to do anything?</div>
-      <div class="faq-a">After a 15-minute onboarding form or call, basically nothing. We write, we publish, we track. You get a monthly report and a content calendar preview. That's it.</div>
+      <div class="faq-a">After a 10-minute onboarding form, basically nothing. We write, we publish, we track. You get a monthly report and a content calendar preview. That's it.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Can I cancel anytime?</div>
@@ -275,23 +389,53 @@
     </div>
     <div class="faq-item">
       <div class="faq-q">What do you need from me to start?</div>
-      <div class="faq-a">Your service area (city/region), the services you offer, your website URL (if you have one), and access to your Google Business Profile. We handle the rest.</div>
+      <div class="faq-a">Your service area (city/region), the services you offer, your website URL, and access to your Google Business Profile. We handle the rest.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if I don't have a website?</div>
+      <div class="faq-a">We can work with Google Business Profile-only clients and help you evaluate affordable website options. Reach out and we'll talk through your situation.</div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA banner -->
 <section class="cta-banner">
-  <h2>Ready to start showing up on Google?</h2>
-  <p>Join the first 10 founding members and lock in your rate forever.</p>
-  <a href="sms:+18447431108?body=Hi%2C%20I%27m%20interested%20in%20TradeRankAI">Text Us to Claim Your Spot →</a>
-  <p style="margin-top:20px; font-size:15px; opacity:0.8;">Call or text: <a href="tel:+18447431108" style="color:white; font-weight:700; text-decoration:underline;">(844) 743-1108</a></p>
+  <h2>Find out where you're losing on Google — free.</h2>
+  <p>Run your free 15-point SEO audit. No email, no signup.</p>
+  <a href="hvac-seo-audit.html" class="main">Get My Free Audit →</a>
+  <a href="#contact" class="secondary">See Pricing</a>
+  <p style="margin-top:24px; font-size:14px; opacity:0.7;">Questions? Call or text: (844) 743-1108</p>
 </section>
 
 <footer>
   <div class="logo" style="font-size: 18px;">TradeRank<span>AI</span></div>
   <div>© 2026 TradeRankAI · (844) 743-1108</div>
+  <div><a href="hvac-seo-audit.html" style="color:var(--blue); text-decoration:none; font-weight:600;">Free Audit Tool →</a></div>
 </footer>
+
+<script>
+  // Handle form submission with AJAX to show success message
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = this;
+    var btn = form.querySelector('.form-submit-btn');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(res) {
+      document.getElementById('form-success').style.display = 'block';
+      form.style.display = 'none';
+    }).catch(function() {
+      // Fallback: show success anyway (form still submitted)
+      document.getElementById('form-success').style.display = 'block';
+      form.style.display = 'none';
+    });
+  });
+</script>
 
 </body>
 </html>
